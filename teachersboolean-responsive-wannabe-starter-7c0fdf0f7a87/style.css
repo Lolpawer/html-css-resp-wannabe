@@ -75,9 +75,12 @@ img {
 /* ______________________________________________ */
 
 @media screen and (max-width: 575px) {
-  
+
   .row {
+    width: 100%;
     margin-top: 0;
+    padding-bottom: 10px;
+    padding-top: 1px; /* Serve per collegare i blocchi, togliendolo rimane spazio bianco */
   }
 
   /* BLOCCO LEZIONI */
@@ -89,12 +92,6 @@ img {
   #lezioni .row>.left,
   #lezioni .row>.right {
     width: 100%;
-    padding: 10px 10px;
-    font-size: 30px;
-  }
-
-  #lezioni .row h1 {
-    font-size: 50px;
   }
 
   #lezioni .row h3 {
@@ -112,16 +109,32 @@ img {
   #steps .row>.central,
   #steps .row>.right {
     width: 100%;
-    padding: 10px 10px;
-    font-size: 30px;
-  }
-
-  #steps .row h1 {
-    font-size: 50px;
+    margin-top: 20px;
   }
 
   #steps .row h3 {
     margin: 0 0;
+  }
+
+  /* BLOCCO PERCHE */
+
+  #why .row {
+    background-color: #f2f2c9;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #why .row h3 {
+    margin: 0 0;
+  }
+
+  hr {
+    background-color: #555555;
   }
 
 }
